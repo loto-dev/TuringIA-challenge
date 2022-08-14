@@ -16,12 +16,6 @@
     font-weight: lighter;
 }
 
-/* @font-face {
-    font-family: "Urbane";
-    src: url("fonts/Urbane-Heavy.ttf") format("truetype");
-    font-weight: "bolder";
-} */
-
 * {
     font-size: 16px;
     font-family: "Urbane";
@@ -32,21 +26,19 @@ h1 {
     font-size: 2rem;
 }
 
-video {
+#home video {
     position: relative;
     display: block;
     z-index: 0;
-
     filter: brightness(60%);
     width: 100%;
     height: 70vh;
     object-fit: cover;
 }
 
-.container {
+/* .container {
     position: relative;
-}
-
+} */
 
 .overlay {
     position: absolute;
@@ -59,13 +51,7 @@ a {
     display: inline-block;
 }
 
-.navbar-brand {
-
-    font-weight: bold;
-}
-
-
-li {
+nav li {
     font-weight: bold;
     color: white;
     opacity: 1;
@@ -75,24 +61,6 @@ li {
     font-weight: lighter;
 }
 
-nav {
-    font-size: 22px;
-}
-
-nav .navbar-nav li a {
-    color: white !important;
-    transition: color 1s;
-}
-
-nav .navbar-nav li a:hover {
-    color: rgb(70, 113, 229) !important;
-}
-
-.dropdown-item {
-    background-color: transparent;
-    color: white;
-    font-weight: bold;
-}
 
 #home {
     color: white;
@@ -112,4 +80,256 @@ nav .navbar-nav li a:hover {
 
 #technologies {
     background-color: #dad6d6;
+}
+
+#tableau {
+    background-image: url('images/tableau_bw.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 180px;
+    height: 100px;
+}
+
+#tableau:hover {
+    background-image: url('images/tableau.png');
+}
+
+#salesforce {
+    background-image: url('images/salesforce_bw.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 180px;
+    height: 100px;
+}
+
+#salesforce:hover {
+    background-image: url('images/salesforce.png');
+}
+
+#pmi {
+    background-image: url('images/pmi2_bw.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 180px;
+    height: 100px;
+}
+
+#pmi:hover {
+    background-image: url('images/pmi2.png');
+}
+
+#scrum {
+    background-image: url('images/scrum_bw.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 180px;
+    height: 100px;
+}
+
+#scrum:hover {
+    background-image: url('images/scrum.png');
+}
+
+.arrow-shape {
+    width: 30vw;
+    height: 50vh;
+    /* clip-path: polygon(20% 20%, 20% 0%, 75% 0%, 100% 50%, 75% 100%, 20% 100%);
+    } */
+    clip-path: circle(300px at 50px 50px);
+
+}
+
+.rombo {
+    width: 500px;
+    height: 250px;
+    transform: rotate(25deg);
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+#romboContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#asideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#asideText h3 {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+nav {
+    font-size: 22px;
+}
+
+nav .navbar-nav li a {
+    color: white !important;
+    transition: color 1s;
+}
+
+nav .navbar-nav li a.scrolled {
+    color: black !important;
+}
+
+nav .navbar-nav li a:hover {
+    color: rgb(70, 113, 229) !important;
+}
+
+.dropdown-item {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar svg {
+    fill: white;
+}
+
+.navbar svg.scrolled {
+    fill: black;
+}
+
+.navbar {
+    transition: 500ms ease;
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: #fff !important;
+    color: black !important;
+}
+
+footer {
+    display: block;
+    background-color: #262626;
+    padding-top: 4.5rem;
+    padding-bottom: 8rem;
+    color: white;
+}
+
+footer h3 {
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+#form-footer {
+    display: flex;
+    margin-top: 10px;
+    padding: 6px 10px;
+    padding-left: 0;
+    border-radius: 4px;
+}
+
+#aviso {
+    margin-top: 3rem;
+    text-decoration: none;
+}
+
+footer h5 {
+    margin-bottom: 0;
+}
+
+.background-svg {
+    width: 36px;
+    height: 36px;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg:hover {
+    fill: rgba(255, 255, 255, 0.4);
+}
+
+#redes a {
+    margin: 0.5rem;
+}
+
+#redes svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+    transition: all 1s;
+}
+
+.card {
+    margin-left: 2rem;
+    min-width: 24rem;
+    border: none;
+    overflow: visible;
+    height: 35rem;
+}
+
+.card img {
+    min-height: 30vh;
+    display: block;
+    object-fit: cover;
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    background-color: #f3f4f5;
+    width: 90%;
+    min-height: 10vh;
+    display: block;
+    line-height: 2rem;
+    padding: 1rem 2rem 0;
+    position: absolute;
+    right: 0;
+    bottom: 6rem;
+    overflow: visible;
+}
+
+.card-title {
+    overflow: visible;
+}
+
+#services {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 32rem;
+    max-height: fit-content;
+    margin: 8rem;    
+}
+
+#services svg {
+    fill: #0c62fb;
+    cursor: pointer;
+    height: 100px;
+
+}
+
+.turingSlideshow {
+    position: absolute;
+    top: 0;
+    left: -200rem;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+#Next,
+#Prev {
+    position: absolute;
+    z-index: 99;
+}
+
+#Next {
+    right: 0;
 }
